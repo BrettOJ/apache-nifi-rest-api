@@ -1,0 +1,209 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "NiFi-access",
+    "dateExported": "2024-01-24T00:15:14.838Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5589a45b-7a62-414f-8587-e85d495c0c0d",
+            "colId": "67713f75-1be0-4b70-820f-899213eda37d",
+            "containerId": "",
+            "name": "/access/config",
+            "url": "https://nifi.konjur.cloud:8443/nifi-api/access/config",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-24T00:15:03.651Z",
+            "modified": "2024-01-24T00:15:03.651Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "32a6d437-ab5b-4b73-8a32-bab725f9cd43",
+            "colId": "67713f75-1be0-4b70-820f-899213eda37d",
+            "containerId": "",
+            "name": "/access/token",
+            "url": "https://nifi.konjur.cloud:8443/nifi-api/access/token?username=admin&password=ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-24T00:15:03.652Z",
+            "modified": "2024-01-24T00:15:03.652Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "username",
+                    "value": "admin",
+                    "isPath": false
+                },
+                {
+                    "name": "password",
+                    "value": "ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "988ca023-f5cd-421b-b9d5-035e7398da8f",
+            "colId": "67713f75-1be0-4b70-820f-899213eda37d",
+            "containerId": "",
+            "name": "/access/token/expiration",
+            "url": "https://nifi.konjur.cloud:8443/nifi-api/access/token/expiration",
+            "method": "GET",
+            "sortNum": 22500,
+            "created": "2024-01-24T00:15:03.654Z",
+            "modified": "2024-01-24T00:15:03.654Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0bef2ee6-efd4-47f8-84b6-a29afcd14862",
+            "colId": "67713f75-1be0-4b70-820f-899213eda37d",
+            "containerId": "",
+            "name": "/system-diagnostics",
+            "url": "https://nifi.konjur.cloud:8443/nifi-api/system-diagnostics",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-24T00:15:03.653Z",
+            "modified": "2024-01-24T00:15:03.653Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": ""
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "91008ec6-656b-44bf-8cbb-eb5b04b8c4d3",
+            "colId": "67713f75-1be0-4b70-820f-899213eda37d",
+            "containerId": "",
+            "name": "/flow/processors/{id}/status",
+            "url": "https://nifi.konjur.cloud:8443/nifi-api/flow/processors/{id}/status",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-24T00:15:03.655Z",
+            "modified": "2024-01-24T00:15:03.655Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": ""
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "0d99434c-0184-1000-2258-5a048916406b",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "1caece35-a19c-4c4c-b6e5-19b4d2affd45",
+            "colId": "67713f75-1be0-4b70-820f-899213eda37d",
+            "containerId": "",
+            "name": "/processors/run-status-details/queries",
+            "url": "https://nifi.konjur.cloud:8443/nifi-api/processors/run-status-details/queries",
+            "method": "POST",
+            "sortNum": 45000,
+            "created": "2024-01-24T00:15:03.657Z",
+            "modified": "2024-01-24T00:15:03.657Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": ""
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"processorIds\": [\"0d99434c-0184-1000-2258-5a048916406b\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ec873d40-7174-4041-89bf-d48c1a324570",
+            "colId": "67713f75-1be0-4b70-820f-899213eda37d",
+            "containerId": "",
+            "name": "/processors/{id}/run-status",
+            "url": "https://nifi.konjur.cloud:8443/nifi-api/processors/{id}/run-status",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-01-24T00:15:03.656Z",
+            "modified": "2024-01-24T00:15:03.656Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": ""
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "0d99434c-0184-1000-2258-5a048916406b",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"revision\": {\n    \"version\": 15,\n    \"lastModifier\": \"steven\"\n  },\n  \"state\": \"RUN_ONCE\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
